@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* body sem background-image */
+body {
+  margin: 0;
+  color: #f0eaff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* container principal */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* cada tela/card */
+.screen {
+  background: rgba(30, 30, 30, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(187, 77, 233, 0.6);
+  color: #eee;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+/* botões lilás */
+.btn {
+  background: #bb4de9;
+  border: none;
+  padding: 15px 30px;
+  color: #222;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 15px #bb4de9cc;
+  margin: 10px 5px;
+}
+
+.btn:hover {
+  background: #9b63f7;
+  box-shadow: 0 0 20px #9b63f7cc;
+  transform: scale(1.05);
+}
+
+/* texto estilo pixação */
+.pixacao-text {
+  font-family: 'Special Elite', cursive;
+  color: #ff00ff;
+  text-shadow: 2px 2px 5px #ff00ff88;
+  margin-bottom: 15px;
+}
+
+/* subtítulo estilo pixação */
+.pixacao-subtitle {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5rem;
+  color: #dd00ddcc;
+  margin-bottom: 30px;
+}
+
+/* efeito de digitação */
+.typed-text {
+  font-size: 1.3rem;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  min-height: 120px;
+  margin-bottom: 15px;
+  color: #f0c0ff;
+  text-shadow: 0 0 10px #d000ffaa;
+}
+
+/* carrossel de fotos */
+.photo-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.photo-carousel img {
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff00ffaa;
+}
+
+/* responsividade */
+@media (max-width: 700px) {
+  .screen {
+    padding: 20px;
+    width: 90%;
+  }
+  .pixacao-text {
+    font-size: 2rem;
+  }
+  .pixacao-subtitle {
+    font-size: 1.1rem;
+  }
+  .typed-text {
+    font-size: 1.1rem;
+    min-height: 100px;
+  }
+}
